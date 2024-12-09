@@ -1,0 +1,27 @@
+### Repositorio para implementacao das rotas da Lumx no smart contract da Rivool Finance.
+
+- Os contratos e ambiente sao para testes e entedimento das rotas da Lumx no smart contract.
+
+```javascript
+curl -X POST http://localhost:8080/create-wallet \
+-H "Content-Type: application/json"
+```
+
+```javascript
+curl -X POST http://localhost:8080/invest-usdc \
+-H "Content-Type: application/json" \
+-d '{
+  "walletId": "53451fa8-6be6-47a1-926c-856354df3b19",
+  "amount": 1000000
+}'
+```
+
+```javascript
+curl -X POST http://localhost:8080/approve \
+-H "Content-Type: application/json" \
+-d '{
+  "walletId": "c9ea91be-1cee-400c-8509-410cf3329605",
+  "spender": "0xeef3dda161622e541416bd9dd46db82bb91c2a09",
+  "value": 1000000
+}'
+```
